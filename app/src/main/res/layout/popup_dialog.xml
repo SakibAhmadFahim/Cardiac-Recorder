@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/popUpDialog"
+    android:layout_margin="20dp"
+    >
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             >
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/comfortaa"
+                 android:text="Do you want to create \n a measure?"
+                 android:textAlignment="center"
+                 android:textStyle="bold"
+                 android:textSize="20sp"
+                 android:layout_marginTop="20dp"
+                 />
+
+             <EditText
+                 android:id="@+id/systolic"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="20dp"
+                 android:inputType="number"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/edit_text_bg"
+                 android:fontFamily="@font/comfortaa"
+                 android:hint="Systolic"
+                 android:padding="10dp" />
+
+             <EditText
+                 android:id="@+id/diastolic"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="20dp"
+                 android:inputType="number"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/edit_text_bg"
+                 android:fontFamily="@font/comfortaa"
+                 android:hint="Diastolic"
+                 android:padding="10dp" />
+             <EditText
+                 android:id="@+id/pulse_rate"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="20dp"
+                 android:inputType="number"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/edit_text_bg"
+                 android:fontFamily="@font/comfortaa"
+                 android:hint="Pulse Rate (max 150)"
+                 android:padding="10dp" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:weightSum="2"
+                 android:layout_marginTop="20dp"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 >
+
+                 <EditText
+                     android:id="@+id/date"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="8dp"
+                     android:layout_weight="0.7"
+                     android:textSize="16sp"
+                     android:background="@drawable/edit_text_bg"
+                     android:fontFamily="@font/comfortaa"
+                     android:hint="Date"
+                     android:padding="10dp"
+                     />
+
+                 <EditText
+                     android:id="@+id/time"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="8dp"
+                     android:layout_weight="1.3"
+                     android:textSize="16sp"
+                     android:background="@drawable/edit_text_bg"
+                     android:fontFamily="@font/comfortaa"
+                     android:hint="Time"
+                     android:padding="10dp" />
+
+             </LinearLayout>
+
+             <EditText
+                 android:id="@+id/comments"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/edit_text_bg"
+                 android:fontFamily="@font/comfortaa"
+                 android:hint="Comments"
+                 android:padding="10dp" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:weightSum="2"
+                 android:layout_marginTop="50dp"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginBottom="40dp"
+                 >
+
+                 <Button
+                     android:id="@+id/yes_btn"
+                     android:layout_width="150dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="40dp"
+                     android:layout_marginRight="40dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/btn_bg"
+                     android:fontFamily="@font/comfortaa"
+                     android:text="Yes"
+
+                     />
+
+                 <Button
+                     android:id="@+id/no_btn"
+                     android:layout_width="150dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="40dp"
+                     android:layout_marginRight="40dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/btn_bg"
+                     android:fontFamily="@font/comfortaa"
+                     android:text="No"
+                   />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+
+
+</ScrollView>

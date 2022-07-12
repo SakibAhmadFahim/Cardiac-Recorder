@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.example.cardiacmonitor.MainActivity">
 
 
     <ImageView
-        android:id="@+id/GfG_full_logo"
         android:layout_width="596dp"
         android:layout_height="858dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main">
+        app:srcCompat="@drawable/main"
+        android:contentDescription="TODO">
 
     </ImageView>
 
