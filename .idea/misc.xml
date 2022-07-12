@@ -3,8 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/KUET_CSE_3.1/Project/Software/CardiacRecorderApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/KUET_CSE_3.1/Project/Software/CardiacRecorderApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/CardiacMonitorFinal/app/src/main/res/layout/action_popup_dialog.xml" value="0.1" />
+        <entry key="..\:/CardiacMonitorFinal/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/CardiacMonitorFinal/app/src/main/res/layout/activity_records.xml" value="0.1" />
+        <entry key="..\:/CardiacMonitorFinal/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/CardiacMonitorFinal/app/src/main/res/layout/popup_dialog.xml" value="0.1" />
+        <entry key="..\:/CardiacMonitorFinal/app/src/main/res/layout/sample_list.xml" value="0.1" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/drawable/btn_bg.xml" value="0.183" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/drawable/layout_bg.xml" value="0.1" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/drawable/list_bg.xml" value="0.1" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/drawable/shape_circle_bg.xml" value="0.1" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/action_popup_dialog.xml" value="0.264" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/activity_records.xml" value="0.264" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/activity_splash.xml" value="0.16944444444444445" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/popup_dialog.xml" value="0.4" />
+        <entry key="..\:/KUET_CSE_3.1/CSE 3120/Software_Project/Cardiac_Monitor_Rupok_Project/app/src/main/res/layout/sample_list.xml" value="0.1" />
       </map>
     </option>
   </component>

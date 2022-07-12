@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cardiacrecorderapp">
+    package="com.example.cardiacmonitor">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,13 @@
         android:label="Cardiac Recorder App"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CardiacRecorderApp">
+        android:theme="@style/Theme.CardiacMonitor">
+        <activity
+            android:name=".RecordsActivity"
+            android:exported="false"
+            android:label="Records"
+            android:theme="@style/Theme.CardiacMonitor"
+            />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -19,7 +25,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
+
 </manifest>
