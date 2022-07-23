@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/CardViewColor.xml" value="0.2615" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/add_circle_outline_24.xml" value="0.281" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/add_icon.xml" value="0.281" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/card_view_color.xml" value="0.2" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/custom_button.xml" value="0.22" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/custom_button_add.xml" value="0.2615" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/custom_lower_round_button.xml" value="0.182" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/green_circle.xml" value="0.2615" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.222" />
@@ -20,9 +23,10 @@
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/activity_update.xml" value="0.25625" />
-        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/fragment_home.xml" value="0.271286231884058" />
-        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/fragment_profile.xml" value="0.271286231884058" />
-        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/fragment_record.xml" value="0.271286231884058" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/dropdown_item.xml" value="0.2765625" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/fragment_record.xml" value="0.25" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/layout/my_row.xml" value="0.33" />
         <entry key="..\:/3.1/_Project/Software Project/NewACC/CardiacRecorder/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
       </map>

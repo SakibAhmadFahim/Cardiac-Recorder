@@ -1,11 +1,15 @@
 package com.example.cardiacrecorder;
 
+import static android.view.animation.AnimationUtils.loadAnimation;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -29,6 +33,8 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
     ArrayList<String> time;
     ArrayList<String> condition;
     ArrayList<String> comment;
+
+    Animation translate_anim;
 
 
     public CustomAdapter(Context context, ArrayList<String> R_id, ArrayList<String> systolic, ArrayList<String> diastolic, ArrayList<String> heartRate, ArrayList<String> date,
@@ -81,7 +87,7 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
         return systolic.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView systolicTV, diastolicTV, heartRateTV, dateTV, timeTV, conditionTV;
         LinearLayout mainLayout;
@@ -95,6 +101,11 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
             timeTV = itemView.findViewById(R.id.timeTV);
             conditionTV = itemView.findViewById(R.id.conditionTV);
             mainLayout = itemView.findViewById(R.id.mainLayout);
+
+            //Animate RecyclerView
+
+            translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
+            mainLayout.setAnimation(translate_anim);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

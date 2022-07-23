@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextHeartRateED" />
 
     <EditText
-        android:id="@+id/editTextComment"
+        android:id="@+id/editTextCommentED"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTimeED" />
 
     <Button
-        android:id="@+id/Update_button"
+        android:id="@+id/Update_buttonED"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
@@ -113,10 +113,10 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextComment" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCommentED" />
 
     <Button
-        android:id="@+id/Cancel_button"
+        android:id="@+id/Cancel_buttonED"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/custom_button"
@@ -125,7 +125,7 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Update_button"
-        app:layout_constraintStart_toStartOf="@+id/Update_button"
-        app:layout_constraintTop_toBottomOf="@+id/Update_button" />
+        app:layout_constraintEnd_toEndOf="@+id/Update_buttonED"
+        app:layout_constraintStart_toStartOf="@+id/Update_buttonED"
+        app:layout_constraintTop_toBottomOf="@+id/Update_buttonED" />
 </androidx.constraintlayout.widget.ConstraintLayout>

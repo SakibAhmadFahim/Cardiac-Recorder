@@ -1,8 +1,10 @@
 package com.example.cardiacrecorder;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +39,14 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DetailsActivity.this,UpdateActivity.class);
+                intent.putExtra("id",v_id);
+                intent.putExtra("systolic",v_systolic);
+                intent.putExtra("diastolic",v_diastolic);
+                intent.putExtra("heartRate",v_heartRate);
+                intent.putExtra("date",v_date);
+                intent.putExtra("time",v_time);
+                intent.putExtra("condition",v_condition);
+                intent.putExtra("comment",v_comment);
                 startActivity(intent);
                 finish();
             }
@@ -45,7 +55,7 @@ public class DetailsActivity extends AppCompatActivity {
         delete_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                confirmDialog();
             }
         });
 
@@ -95,4 +105,27 @@ public class DetailsActivity extends AppCompatActivity {
             Toast.makeText(this, "No Data", Toast.LENGTH_SHORT).show();;
         }
     }
+
+    void confirmDialog()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Delete");
+        builder.setMessage("Are you sure delete this record ?");
+
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                MyDatabaseHelper myDB = new MyDatabaseHelper(DetailsActivity.this);
+                myDB.deleteRecord(v_id);
+                finish();
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+            }
+        });
+        builder.create().show();
+    }
+
 }
