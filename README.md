@@ -21,4 +21,3 @@ Sample UI of the APP:<br>
 <img src = "images/7.PNG" alt = "EDIT" title = "EDIT" width = "270" >
 <img src = "images/8.PNG" alt = "PROFILE" title = "PROFILE" width = "270" >
 <br>
-<br>
