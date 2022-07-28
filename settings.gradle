@@ -12,5 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "CardiacMonitor"
+
+rootProject.name = "CardiacRecorder"
 include ':app'

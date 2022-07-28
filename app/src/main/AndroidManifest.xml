@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cardiacmonitor">
+    package="com.example.cardiacrecorder">
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
-        android:label="Cardiac Recorder App"
-        android:roundIcon="@drawable/icon"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CardiacMonitor">
+        android:theme="@style/Theme.CardiacRecorder">
         <activity
-            android:name=".RecordsActivity"
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHome"
             android:exported="false"
-            android:label="Records"
-            android:theme="@style/Theme.CardiacMonitor"
-            />
+            android:label="Add Record" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ActivityGetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySplashScreen"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,13 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeActivity"
-            android:exported="true"/>
+        <activity android:name=".MainActivity" />
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
