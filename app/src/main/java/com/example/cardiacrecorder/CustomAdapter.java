@@ -37,6 +37,9 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
     Animation translate_anim;
 
 
+    /**
+     * CustomAdapter Constructor
+     */
     public CustomAdapter(Context context, ArrayList<String> R_id, ArrayList<String> systolic, ArrayList<String> diastolic, ArrayList<String> heartRate, ArrayList<String> date,
                          ArrayList<String> time, ArrayList<String> condition, ArrayList<String> comment , RecyclerViewInterface recyclerViewInterface)
     {

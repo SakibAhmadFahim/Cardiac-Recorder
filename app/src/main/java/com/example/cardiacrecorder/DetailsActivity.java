@@ -35,6 +35,9 @@ public class DetailsActivity extends AppCompatActivity {
         delete_button  = findViewById(R.id.Delete_buttonD);
         cancel_button = findViewById(R.id.Cancel_buttonTVD);
 
+        /**
+         * Edit button action defined
+         */
         edit_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +71,9 @@ public class DetailsActivity extends AppCompatActivity {
         getAndSetIntentData();
     }
 
+    /**
+     * Getting data from intent and setting them to textField
+     */
     void getAndSetIntentData()
     {
         if( getIntent().hasExtra("id") && getIntent().hasExtra("systolic") && getIntent().hasExtra("diastolic") && getIntent().hasExtra("heartRate")
@@ -106,6 +112,9 @@ public class DetailsActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Confirm Dialog Box
+     */
     void confirmDialog()
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

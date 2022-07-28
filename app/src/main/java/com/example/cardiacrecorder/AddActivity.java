@@ -28,6 +28,9 @@ public class AddActivity extends AppCompatActivity {
         add_button = findViewById(R.id.Add_button);
         cancel_button = findViewById(R.id.Cancel_button);
 
+        /**
+         * Add button action defined
+         */
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,6 +78,9 @@ public class AddActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * Cancel button action defined
+         */
         cancel_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
