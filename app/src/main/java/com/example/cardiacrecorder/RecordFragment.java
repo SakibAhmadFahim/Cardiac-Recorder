@@ -36,6 +36,9 @@ public class RecordFragment extends Fragment implements  RecyclerViewInterface{
         recyclerView = view.findViewById(R.id.recycleView);
         add_button = view.findViewById(R.id.add_button);
 
+        /**
+         * FloatingActionButton Add action defined
+         */
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +63,9 @@ public class RecordFragment extends Fragment implements  RecyclerViewInterface{
         return view;
     }
 
+    /**
+     * Store Data in from Recycle View
+     */
     void storeDataInArrays()
     {
         Cursor cursor = myDB.readAllDate();

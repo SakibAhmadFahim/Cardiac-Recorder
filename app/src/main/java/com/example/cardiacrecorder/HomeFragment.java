@@ -45,6 +45,9 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+    /**
+     * Gets the Average HeartRate from the database using aggregate function
+     */
     void setAvg()
     {
         v_heartRate = myDB.averageRate();

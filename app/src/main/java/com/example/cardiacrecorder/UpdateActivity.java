@@ -32,6 +32,9 @@ public class UpdateActivity extends AppCompatActivity {
         cancel_button = findViewById(R.id.Cancel_buttonED);
         getAndSetIntentData();
 
+        /**
+         * Cancel button action defined
+         */
         cancel_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,6 +92,9 @@ public class UpdateActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Getting data from intent and setting them to textField
+     */
     void getAndSetIntentData()
     {
         if( getIntent().hasExtra("id") && getIntent().hasExtra("systolic") && getIntent().hasExtra("diastolic") && getIntent().hasExtra("heartRate")

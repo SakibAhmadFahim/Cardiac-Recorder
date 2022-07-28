@@ -74,7 +74,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    //ADD TO RECORD TABLE
+    /**
+     * Adding New Record to Record table
+     * @return
+     */
     public long addRecord( int Systolic, int Diastolic, int HeartRate, String Date, String Time, int Condition, String Comment )
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -100,7 +103,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
-    //ADD TO PROFILE TABLE
+    /**
+     * Adding or Updating Profile info to Profile table
+     * @return
+     */
     void addProfile( String Gender , int Age, int Weight,  int Height )
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -122,7 +128,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    //READ ALL DATA OF RECORD TABLE
+    /**
+     * Fetching all data from Record table using Cursor
+     * @return
+     */
     Cursor readAllDate(){
         String query = "SELECT * FROM "+ TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -135,7 +144,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    //READ ALL DATA OF PROFILE TABLE
+    /**
+     * Fetching all data from Profile table using Cursor
+     * @return
+     */
     Cursor readProfile(){
         String query = "SELECT * FROM "+ TABLE_NAME_PRO;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -148,6 +160,11 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    /**
+     * Calculating the average heart rate using
+     * aggregate function AVG from Record table
+     * @return
+     */
     public String averageRate()
     {
         String ans;
@@ -168,7 +185,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    //UPDATE ON RECORD TABLE
+    /**
+     * Updating data on Record table
+     */
     void updateRecord( String row_id, int Systolic, int Diastolic, int HeartRate, String Date,
                      String Time, int Condition, String Comment)
     {
@@ -196,7 +215,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    //UPDATE ON PROFILE TABLE
+    /**
+     * Updating data on Profile table
+     */
     void updateProfile( String row_id, String Gender , int Age, int Weight,  int Height)
     {
 
@@ -219,7 +240,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    //DELETE ON RECORD
+    /**
+     * Deleting data from Record table
+     */
     void deleteRecord( String row_id )
     {
         SQLiteDatabase db = this.getWritableDatabase();

@@ -54,6 +54,9 @@ public class ProfileFragment extends Fragment {
         v_height = new String();
         setData();
 
+        /**
+         * Simple Snipper for Selecting Gender
+         */
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -68,6 +71,10 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+
+        /**
+         * Update button action defined
+         */
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -149,6 +156,9 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
     }
 
+    /**
+     * Setting data on TextField
+     */
     void setData()
     {
         Cursor cursor = myDB.readProfile();
