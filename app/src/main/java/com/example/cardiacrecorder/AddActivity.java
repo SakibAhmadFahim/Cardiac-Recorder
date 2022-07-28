@@ -63,7 +63,7 @@ public class AddActivity extends AppCompatActivity {
                         status = 0;
                     }
 
-                    myDB.addRecord( systole,
+                    long i = myDB.addRecord( systole,
                             dist,
                             heart,
                             date.getText().toString().trim(),

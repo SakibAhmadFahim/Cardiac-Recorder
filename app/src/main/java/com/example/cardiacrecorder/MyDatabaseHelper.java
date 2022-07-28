@@ -38,7 +38,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
 
 
-    MyDatabaseHelper(@Nullable Context context) {
+    public MyDatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null  , DATABASE_VERSION);
         this.context = context;
     }
@@ -75,7 +75,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     }
 
     //ADD TO RECORD TABLE
-    void addRecord( int Systolic, int Diastolic, int HeartRate, String Date, String Time, int Condition, String Comment )
+    public long addRecord( int Systolic, int Diastolic, int HeartRate, String Date, String Time, int Condition, String Comment )
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -97,6 +97,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         else {
             Toast.makeText(context, "Added Successfully", Toast.LENGTH_SHORT).show();
         }
+        return result;
     }
 
     //ADD TO PROFILE TABLE
@@ -231,6 +232,49 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             Toast.makeText(context, "Delete Successfully", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public boolean checkDataExistsOrNot(Long id) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        String Query = "Select * from " + TABLE_NAME + " where " + COLUMN_ID + " = " + Long.toString(id);
+        Cursor cursor = sqLiteDatabase.rawQuery(Query, null);
+        if (cursor.getCount() <= 0) {
+            cursor.close();
+            return false;
+        }
+        cursor.close();
+        return true;
+    }
+
+    public boolean checkContent(String id, String sys, String dias, String hr , String date, String time, String condition, String comments) {
+        SQLiteDatabase sqLiteDatabase =  this.getWritableDatabase();
+        String[] columns = {MyDatabaseHelper.COLUMN_Systolic, MyDatabaseHelper.COLUMN_Diastolic, MyDatabaseHelper.COLUMN_HeartRate, MyDatabaseHelper.COLUMN_Date, MyDatabaseHelper.COLUMN_Time, MyDatabaseHelper.COLUMN_Condition, MyDatabaseHelper.COLUMN_Comment};
+        Cursor cursor = sqLiteDatabase.query(MyDatabaseHelper.TABLE_NAME, columns, MyDatabaseHelper.COLUMN_ID+" = '"+id+"'", null, null, null, null);
+        while (cursor.moveToNext()) {
+            int i1 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_Systolic);
+            int i2 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_Diastolic);
+            int i3 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_HeartRate);
+            int i4 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_Date);
+            int i5 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_Time);
+            int i6 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_Condition);
+            int i7 = cursor.getColumnIndex(MyDatabaseHelper.COLUMN_Comment);
+
+            String sys1 = cursor.getString(i1);
+            String dia1 = cursor.getString(i2);
+            String hr1 = cursor.getString(i3);
+            String date1 = cursor.getString(i4);
+            String time1 = cursor.getString(i5);
+            String condition1 = cursor.getString(i6);
+            String comment1 = cursor.getString(i7);
+
+
+            if (sys != sys1 || dias != dia1 ||  hr != hr1 || date != date1 || time != time1 || condition != condition1 || comments != comment1 ) {
+                cursor.close();
+                return false;
+            }
+        }
+        cursor.close();
+        return true;
     }
 
 }
