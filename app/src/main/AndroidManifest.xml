@@ -27,6 +27,7 @@
             android:exported="false" />
         <activity
             android:name=".ActivitySplashScreen"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +36,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>

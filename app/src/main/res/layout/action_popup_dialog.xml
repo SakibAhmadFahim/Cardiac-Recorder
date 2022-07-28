@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:padding="10dp"
+    android:id="@+id/action_popUp"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+       <TextView
+           android:id="@+id/textView7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/comfortaa"
+           android:text="What action do you\n want to do?"
+           android:textAlignment="center"
+           android:textSize="20sp"
+           android:layout_marginTop="30dp"
+      />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="2"
+           android:layout_marginTop="60dp"
+           android:layout_marginBottom="30dp"
+           >
+           <Button
+               android:id="@+id/update"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:background="@drawable/btn_bg"
+               android:fontFamily="@font/comfortaa"
+               android:text="Update"
+               android:layout_gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:textAllCaps="false"
+               />
+
+           <Button
+               android:id="@+id/delete"
+               android:layout_width="0dp"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:background="@drawable/btn_bg"
+               android:fontFamily="@font/comfortaa"
+               android:text="Delete"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:textAllCaps="false"
+               />
+
+       </LinearLayout>
+
+</LinearLayout>
