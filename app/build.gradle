@@ -52,6 +52,7 @@ dependencies {
     implementation 'com.daimajia.androidanimations:library:2.3@aar'
     implementation 'androidx.annotation:annotation:1.4.0'
     implementation 'androidx.test.uiautomator:uiautomator-v18:2.2.0-alpha1'
+    implementation files('C:\\Users\\r23gh\\AppData\\Local\\Android\\Sdk\\platforms\\android-32\\android.jar')
 
     testImplementation 'junit:junit:4.13.2'
 
